@@ -96,60 +96,78 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{王瑞}} 
 
 \centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
 
 \centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
+\textbf{浙江大学} \hfill 2024.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
+信息工程\quad 大二 
 \begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+    \item 相关课程：线性代数(97)、C语言程序设计基础及实验(92)
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
 % --- 第一个项目 ---
-% 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
-% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+\textbf{Enroll - 学生选课助手 (浏览器插件)} 
+项目描述：为解决学生选课过程中信息分散、操作繁琐的问题，与团队共同开发了服务于浙江大学学生的选课浏览器插件。该插件整合了课表导出、成绩查询、课堂录播下载等功能，提高学生选课与学习效率。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{核心功能开发}：使用 \textbf{JavaScript} 与 \textbf{Chrome Extension API} 独立实现了课堂录播下载模块，包括视频资源识别、批量抓取与本地存储功能。
+    \item \textbf{团队协作}：与多名同学合作开发，通过 \textbf{Git} 进行版本控制与代码管理，参与需求讨论、功能设计与测试优化全流程。
+    \item \textbf{项目成果}：插件在浙江大学校内推广使用，获得良好反馈。掌握了浏览器插件开发流程与前端工程化协作经验。
+    \item \textbf{相关链接}：\href{https://github.com/QSCTech/Enroll_nx}{GitHub仓库} | \href{https://mp.weixin.qq.com/s/OQEG9Q_kLU5yGWZcwtYdmA}{功能介绍}
 \end{itemize}
 
-% 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
 % --- 第二个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
+\textbf{琼林宝阁 - 道教文化传播网站} 
+项目描述：参与开发一个旨在合法传播道教文化资源的网站，提供道教经典、文章阅读、文化知识等内容，支持文章发布、搜索与分类浏览功能，促进传统文化数字化传播。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+    \item \textbf{前端开发}：使用 \textbf{React.js} 框架，负责文章编辑与浏览模块的前端实现，包括富文本编辑、文章排版阅读功能。
+    \item \textbf{协作开发}：参与项目需求分析、界面设计与功能测试，与后端同学协同完成数据接口对接。
+    \item \textbf{相关链接}:\href{https://taoists.com.cn/}{在线网站} | \href{https://github.com/zjuatri/taoist_school_web}{GitHub仓库}
+\end{itemize}
+
+\projectsep
+
+% --- 第三个项目 ---
+\textbf{五子棋对战网站 (个人项目)} 
+项目描述：为深入学习和实践Vue.js前端框架，独立设计并开发了一个完整的五子棋对战网站，实现了双人对战、胜负判定、棋局记录等核心功能。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{前端实现}：使用 \textbf{Vue.js} 框架实现游戏界面、落子逻辑、胜负判定算法等核心功能。
+    \item \textbf{状态管理}：采用Vue的响应式系统管理游戏状态，确保界面与数据同步更新。
+    \item \textbf{项目收获}：通过完整项目开发，加深了对Vue组件化、数据绑定和前端工程化的理解。
+    \item \textbf{相关链接}：\href{https://github.com/zjuwangrui/wuziqi}{GitHub仓库}
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
+    \item \textbf{编程语言：} \textbf{JavaScript},  HTML/CSS
+    \item \textbf{前端框架：} \textbf{Vue.js}, React.js
+    \item \textbf{开发工具：} Git, Chrome DevTools, VS Code
+    \item \textbf{其他技能：} 浏览器插件开发、RESTful API对接
 \end{itemize}
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
-\begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
+
+
+
+\section{\makebox[\widthof{\faBullseye}][c]{\color{CVBlue}\faBullseye}\ 求职意向}
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{目标职位：} AI / Agent系统开发实习生 或 前后端开发实习生
+    \item \textbf{工作方式：} 支持远程协作，每周可投入≥25小时
+    \item \textbf{期望收获：} 希望参与真实系统迭代，提升工程部署、系统设计与AI应用能力
+\end{itemize}
     
+
+\section{\makebox[\widthof{\faLightbulbO}][c]{\color{CVBlue}\faLightbulbO}\ 个人优势与匹配度}
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{自驱力强：} 所有项目均为主动发起/参与，能独立推进任务并持续迭代
+    \item \textbf{丰富开发经验：} 具备基础的Git工作流、团队协作、前端开发经验
+    \item \textbf{学习适应快：} 大部分项目边做边学，适应能力强。能快速掌握新技术并应用于实践
 \end{itemize}
-    
-\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
-\begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://maksymilan.github.io/}{https://maksymilan.github.io/}
-    \item \textbf{GitHub：} \href{https://github.com/maksymilan}{https://github.com/maksymilan} 
-    \item \textbf{英语水平：} CET-4, CET-6
-\end{itemize}
+
+
 \end{document}
